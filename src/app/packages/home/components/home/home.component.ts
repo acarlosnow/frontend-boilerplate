@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { AuthService } from '@module/auth';
+import { AuthService } from '@lib/auth';
 
 @Component({
   selector: 'app-home',

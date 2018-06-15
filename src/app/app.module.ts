@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthModule } from '@module/auth';
+import { AuthModule } from '@lib/auth';
 import { AppComponent } from './app.component';
 
 const routes: Routes = [
   {
     path: '',
     pathMatch: 'full',
-    loadChildren: '@module/home/home.module#HomeModule'
+    loadChildren: '@package/home/home.module#HomeModule'
   },
   {
     path: '**',
